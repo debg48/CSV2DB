@@ -11,7 +11,7 @@ df.columns = df.columns.str.strip()
 connection = sqlite3.connect('demo.db')
 
 # load data to db
-df.to_sql('<table name>',connection,if_exists='replace')
+df.to_sql('restuarants',connection,if_exists='replace')
 
 # close connection
 connection.close()
